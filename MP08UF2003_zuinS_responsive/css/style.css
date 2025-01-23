@@ -1,0 +1,105 @@
+:root {
+    --colorT: white;
+    --color0: green;
+    --color1: blue;
+    --color2: red;
+    --color3: yellow;
+    --colorB: violet;
+}
+
+@font-face{
+    font-family: 'VIRUST';
+    src: url(../Virust/VIRUSTRegular.eot);
+    src: url(../Virust/VIRUSTRegular.eot?iefix) format('embedded-opentype'),
+        url('../Virust/VIRUSTRegular.woff2') format('wolf2'),
+        url('../Virust/VIRUSTRegular.woff') format('wolf'),
+        url('../Virust/VIRUSTRegular.ttf') format('truetype'),
+        url('../Virust/VIRUSTRegular.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: normal;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    font-family: 'Rio Grande';
+    font-weight: bold;
+    font-style: normal;
+    color: var(--colorT);
+}
+
+p{
+    padding: 1res;
+    background: var(--color0);
+    cursor: zoom-in;
+    color: var(--colorT);
+    overflow: hidden;
+    width: 50vw;
+    height: 50vw;
+}
+
+.progres{
+    height: 10px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--colorB);
+    scale: 0 1;
+    animation: analitzador linear;
+    animation-timeline: scroll();
+        -o-animation-timeline: scroll();
+        -moz-animation-timeline: scroll();
+        -webkit-animation-timeline: scroll();
+    transform-origin: left;
+
+
+}
+
+@keyframes analitzador{
+    to{
+        scale: 1 1;
+    }
+}
+
+body{
+    background-color: orange;
+}
+
+
+
+@media screen and (max-width: 480px) {
+/*-----smartphone---------*/
+
+    body{
+        background: red;
+    }
+    h1{
+        font-size: 1rem;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 1279px) {
+    /*-------tablet--------*/
+
+    body{
+        background: yellow;
+    }
+    h1{
+        font-size: 2rem;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    /*---------ordenadores---------*/
+
+    body{
+        background: orange;
+    }
+    h1{
+        font-size: 4rem;
+    }
+}
+
