@@ -74,7 +74,7 @@ p { /*    el texto de descripción    */
     font-weight: 300;
     color: black;
     position: absolute;
-    top: 780px;
+    top: 820px;
     margin: 0% 400px;
     font-family: 'Courier New', Courier, monospace;
 }
@@ -184,10 +184,17 @@ p { /*    el texto de descripción    */
 }
 
 .sz{
-    height: 100%;
-    width: 100%;
+    width: 50%;
+    height: 50%;
     background-color: ;
-    background-image: url(/img/sz.png)
+    background-image: url(../img/sz.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .p3 ul{ /*---------info--------------------*/
