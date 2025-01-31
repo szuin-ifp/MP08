@@ -183,6 +183,13 @@ p { /*    el texto de descripción    */
     background-image: url(../img/8.png);
 }
 
+.sz{
+    height: 100%;
+    width: 100%;
+    background-color: ;
+    background-image: url(/img/sz.png)
+}
+
 .p3 ul{ /*---------info--------------------*/
     background-color: ;
     font-size: 20px;
