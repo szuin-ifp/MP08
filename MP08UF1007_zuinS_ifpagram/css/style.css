@@ -1,55 +1,19 @@
-body{
-    font-family: Helvetica;
+body {
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-header{
+header {
     height: 166px;
+    background-color: white;
 }
 
-nav {
+nav{
     height: 180px;
-    background-color: ;
+    background-color: white;
 }
-    .cercle{
-        background-color: purple;
-        width: 80px;
-        height: 80px;
-        margin: 28px;
-        display: inline-block;
-        border-radius: 50%;
-        padding: 10px;
-        border: solid 5px white;
-        box-shadow: 0px 0px 15px orangered;
-
-        background-image: url(../img/kylie.jpg);
-        background-size: 100%;
-        background-repeat: no-repeat;
-        
-        opacity: 80%;
-    }
-
-    .cercle:after {
-        content: "+";
-        display: block;
-        background-color: cyan;
-        width: 30px;
-        height: 30px;
-        border-radius: 50%;
-        color: white;
-        font-size: 26px;
-        text-align: center;
-        border: solid 5px white;
-        position: relative;
-        top: 55px;
-        left: 60px;
-    }
-
-    .cercle:hover{
-        opacity: 100%;
-    }
 
 article {
-    height: 2053px;
+    background-color: white;
 }
 
 .contenidor {
@@ -57,65 +21,92 @@ article {
     margin: 0 auto;
     overflow: hidden;
     text-align: center;
-
 }
 
 .entrada {
     width: 536px;
     height: 620px;
     margin: 18px;
+    background-color: white;
     float: left;
-    overflow: hidden;
-    align: center;
 }
-
-.img{
-    width: 536px;
+.img {
+    width:536px;
     height: 536px;
 }
 
 .reaccions {
     height: 84px;
-    background-color: ;
     overflow: hidden;
 }
 
-/*_________________________article___________________*/
+.bolita {
+    height: 80px;
+    width: 80px; 
+    border-radius: 50%;
+    background-color: blue;
+	display: inline-block;
+	margin: 28px;
+    padding: 10px;
+    border: solid 5px white;
+    box-shadow: 0px 0px 10px fuchsia;
+    background-image: url(../img/kylie.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    opacity: 100%;
+    float: left;
+}
+.bolita:first-child::after {
+ content:"+";
+ display: block;
+ background-color: rgb(21, 170, 219);
+ width: 30px;
+ height: 30px;
+ border-radius: 50%;
+ color: white;
+ font-size: 32px;
+ border: solid 5px white;
+ position: relative;
+ top: 55px;
+ left: 60px;
+}
+
+.bolita:hover {
+    opacity: 80%;
+}
 
 .fotoautor{
     width: 35px;
     height: 35px;
     border-radius: 50%;
-    background-image: url(../img/kylie.jpg);
     background-size: 100%;
     background-repeat: no-repeat;
+    background-image: url(../img/kylie.jpg);
     padding: 10px;
-    border: solid 3px white;
+    margin: 10px;
+    border: solid 5px white;
     box-shadow: 0px 0px 10px fuchsia;
     float: left;
-    margin: 10px;
 }
 
-.autor{
-
+.autor {
     width: 268px;
     height: 40px;
-    line-height: 40px;
-    font-weight: 100;
+    line-height:40px;
+    font-weight: 200;
     font-size: 22px;
 }
 
-.moment{
-    width: 268px;
+.moment {
+    width:268px;
     color: gainsboro;
     font-size: 20px;
 }
 
-.esquerra{
+.esquerre {
     width: 50%;
     margin: 0;
     float: left;
-    
 }
 
 .dreta {
@@ -124,34 +115,28 @@ article {
     float: right;
 }
 
-.comentari{
+.comentari {
     height: 40px;
     line-height: 40px;
-    font-weight: 700;
+    font-weight:700;
     font-size: 22px;
     width: 180px;
     float: left;
-
 }
 
-.like{
-    height: 40px;
+.like {
+    height: 40x;
     width: 40px;
     float: left;
-
 }
 
-.mes{
-    height: 40px;
+.mes {
+    height: 40x;
     width: 40px;
     float: left;
-    line-height: 30px;
-    font-weight: 700;
 }
 
-/*________________________header______________________*/
-
-.home{
+.home {
     width: 208px;
     height: 39px;
     background-size: auto;
@@ -161,18 +146,17 @@ article {
     display: inline-block;
 }
 
-.menu{
+.menu {
     width: 208px;
     height: 39px;
-    margin: 50px 0 0 0;
+    margin: 50px 470px 0 470px;
+    background: ;
     display: inline-block;
-    background-color: blue;
 }
 
-.menu li{
+.menu li {
     width: 32px;
     height: 32px;
-    background: yellow;
     margin: 3px 8px;
     display: inline-block;
     background-image: url(../img/ifpagram_11\ Pequeño.jpeg);
@@ -194,10 +178,45 @@ article {
     background-position: -257px -2px;
 }
 
-.menu .perfil{
+.perfil{
     width: 208px;
     height: 39px;
     margin: 50px 0 0 0;
-    background-color: red;
+    background: ;
     display: inline-block;
 }
+
+input {
+    visibility: hidden;
+  }
+  
+  #agradador{
+    margin: 2rem 0 0 0;
+    width: 1.5rem;
+    height: 1.5rem;
+    background: #ddd;
+    position: relative;
+    border-radius: 1rem;
+    float:left;
+    bottom: 20px;
+  }
+  
+  #agradador label {
+    width: 2rem;
+    height: 2rem;
+    visibility: visible; 
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all .5s ease;
+    cursor: pointer;
+    opacity: 0;
+    background-image: url(../img/heart.svg.png); 
+    background-size: 2rem 2rem;
+    background-repeat: no-repeat;
+  }
+  
+  #agradador input[type=checkbox]:checked+label {
+    opacity: 1;
+  }
